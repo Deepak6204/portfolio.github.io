@@ -1,0 +1,281 @@
+@import url(./deepak-yadav-rock-salt-regular.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    scroll-behavior: smooth;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(243, 235, 235);
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+}
+
+.links a.active {
+    color: #f0e100;
+}
+
+nav {
+    padding: 5px 120px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5e7eb00;
+    position: fixed;
+    width: 100%;
+    transition: background-color 1s ease;
+    top: 0px;
+    z-index: 1;
+}
+
+nav:hover {
+    background-color: white !important;
+}
+
+.text {
+    width: 80%;
+    max-width: 1000px;
+}
+
+
+
+nav a:hover, nav a:focus {
+    color: #F0E100;
+    font-size: 25px;
+}
+
+.links {
+    padding-top: 20px;
+}
+
+nav a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: font-size 0.3s ease;
+}
+
+.name {
+    margin: 7px 0 10px 10px;
+    color: white;
+}
+
+.logo img {
+    width: 60px;
+}
+
+
+.logo h1 {
+    padding-top: 10px;
+}
+
+/* navigation bar styling ends */
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 0px 120px;
+    align-items: center;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 300px;
+    background-color: white;
+    position: relative;
+    left: -170px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 10px 20px grey;
+    transition: box-shadow 0.4s ease;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image:hover {
+    box-shadow: 10px 10px 60px grey;
+}
+
+.social {
+    position: relative;
+    left: -140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social i {
+    font-size: 45px;
+    margin: 5px;
+}
+
+/* icon styling */
+
+.li {
+    background-color: #0A66C2;
+    padding: 4px 6px;
+    color: white;
+    font-size: 35px !important;
+    border-radius: 4px;
+}
+
+.insta {
+    background: -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+}
+
+
+.gt {
+    -webkit-text-fill-color: black;
+    border-radius: 10px;
+}
+
+.tele {
+    color: #34ABE7;
+}
+
+.wp {
+    color: #46C254;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    word-spacing: 10px;
+    font-size: 45px;
+}
+
+.about, .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(./background.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100vh;
+}
+
+#heading1 {
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 3px 3px 10px black;
+}
+
+.about p, .about h2 {
+    font-size: 30px;
+    color: #317B22;
+
+}
+
+.about h2 {
+    padding-right: 30px;
+    color: #A17C6B;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 20px;
+}
+
+li {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    margin: 60px 10px;
+}
+
+.skills {
+    background-image: none;
+    display: flex;
+}
+
+.skills i {
+    font-size: 50px;
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills img {
+    width: 140px;
+}
+
+.ele{
+    margin: 30px 60px;
+}
+
+
+.progressbar {
+    width: 200px;
+    height: 5px;
+    margin-top: 10px;
+    border: 1px solid #565656;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(245, 159, 0);
+}
+
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: orange;
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+.c {
+    width: 85%;
+}
+
+.cpp {
+    width: 80%;
+}
+
+
+.python {
+    width: 35%;
+}
+
+.html {
+    width: 85%;
+}
+
+.css {
+    width: 75%;
+}
+
+.js {
+    width: 65%;
+}
+
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
