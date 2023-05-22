@@ -297,7 +297,7 @@ li {
     }
     .progressbar{
         width: 110px;
-        height: 3px;
+        height: 4px;
     }
     #heading1{
         font-size: 30px;
@@ -350,6 +350,10 @@ li {
     }
     .image{
         width: 150px;
+    }
+    .progressbar{
+    box-shadow: 0 0 3px rgb(245, 159, 0);
+
     }
 }
 
