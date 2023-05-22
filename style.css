@@ -1,4 +1,3 @@
-@import url(./deepak-yadav-rock-salt-regular.ttf);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
@@ -86,6 +85,14 @@ nav a {
     align-items: center;
 }
 
+#typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid black;
+    width: fit-content;
+  }
+  
+
 .inner-container {
     display: flex;
     justify-content: center;
@@ -95,12 +102,12 @@ nav a {
     width: 300px;
     background-color: white;
     position: relative;
-    left: -170px;
     border-radius: 10px;
     text-align: center;
-    padding: 10px;
+    padding: 2%;
     box-shadow: 10px 10px 20px grey;
     transition: box-shadow 0.4s ease;
+    transition: width 1s ease;
 }
 
 .image img {
@@ -113,8 +120,8 @@ nav a {
 }
 
 .social {
+    margin-left: 20px;
     position: relative;
-    left: -140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,15 +130,16 @@ nav a {
 .social i {
     font-size: 45px;
     margin: 5px;
+    transition: font-size 1s ease;
 }
 
 /* icon styling */
 
-.li {
+.social .li {
     background-color: #0A66C2;
     padding: 4px 6px;
     color: white;
-    font-size: 35px !important;
+    font-size: 35px ;
     border-radius: 4px;
 }
 
@@ -166,13 +174,10 @@ nav a {
     font-size: 45px;
 }
 
-.about, .skills {
+ .skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(./background.png) no-repeat;
-    background-size: contain;
-    background-position: right;
     height: 100vh;
 }
 
@@ -180,17 +185,6 @@ nav a {
     font-size: 70px;
     text-align: center;
     text-shadow: 3px 3px 10px black;
-}
-
-.about p, .about h2 {
-    font-size: 30px;
-    color: #317B22;
-
-}
-
-.about h2 {
-    padding-right: 30px;
-    color: #A17C6B;
 }
 
 ul {
@@ -205,10 +199,6 @@ li {
     margin: 60px 10px;
 }
 
-.skills {
-    background-image: none;
-    display: flex;
-}
 
 .skills i {
     font-size: 50px;
@@ -225,7 +215,7 @@ li {
     width: 140px;
 }
 
-.ele{
+.ele {
     margin: 30px 60px;
 }
 
@@ -244,10 +234,15 @@ li {
     height: 100%;
     background-color: orange;
     border-radius: 5px;
-    animation: progress 1500ms ease-in 1;
+    width: 0;
 }
 
 /* Assigning width of each languages*/
+.c, .cpp, .python, .html, .css, .js {
+    animation: progress 1500ms ease-in 1;
+
+}
+
 .c {
     width: 85%;
 }
@@ -273,9 +268,101 @@ li {
     width: 65%;
 }
 
-
 @keyframes progress {
     from {
         width: 0;
+    }
+}
+
+@media (max-width:1100px){
+    .image{
+        width: 200px;
+    }
+
+    .social i{
+        font-size: 25px;
+    }
+
+    .social a .li{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .text{
+        font-size: 25px;
+    }
+
+    .skills img{
+        width: 80px;
+    }
+    .progressbar{
+        width: 110px;
+        height: 3px;
+    }
+    #heading1{
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width:900px){
+    .logo h1{
+        display: none;
+    }
+
+    .text{
+        word-spacing: 3px;
+    }
+
+    nav{
+        padding: 5px 50px;
+    }
+
+    .container{
+        padding: 0px 50px;
+    }
+
+    .ele{
+        margin: 20px;
+    }
+}
+
+@media (max-width:600px){
+    .logo h1{
+        display: none;
+    }
+
+    nav{
+        padding: 0px 0px;
+    }
+
+    nav a{
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .container{
+        padding: 0px 10px;
+    }
+    .text{
+        font-size: 20px;
+        word-spacing: 0px;
+    }
+    .image{
+        width: 150px;
+    }
+}
+
+@media (max-width:450px){
+    .text{
+        font-size: 12px;
+    }
+
+    .image{
+        width: 125px;
+    }
+
+    nav a{
+        margin: 5px;
     }
 }

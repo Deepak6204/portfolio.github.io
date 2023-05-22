@@ -37,9 +37,9 @@
 
     <section class="container" id="container">
       <div class="text">
-        <div class="intro">
+        <div class="intro" >
           <h1>Hi There,</h1>
-          <h3>I'm Deepak Yadav</h3>
+          <h3 id="typewriter">I'm Deepak Yadav</h3>
         </div>
       </div>
       <div class="inner-container">
@@ -55,98 +55,57 @@
       </div>
     </section>
 
-    <section class="about" id="introduction">
-      <h1 id="heading1">Introduction</h1>
-      <ul>
-        <li>
-          <h2>Birthday:</h2>
-          <p>11 February</p>
-        </li>
-        <li>
-          <h2>Height:</h2>
-          <p>5feet 11inch</p>
-        </li>
-        <li>
-          <h2>Degree:</h2>
-          <p>Bachelor of Technology (Undergraduate)</p>
-        </li>
-        <li>
-          <h2>Native City:</h2>
-          <p>Ghazipur, India</p>
-        </li>
-        <li>
-          <h2>Current City:</h2>
-          <p>Srinagar, India</p>
-        </li>
-      </ul>
-    </section>
 
     <section class="skills" id="skills">
       <h1 id="heading1">Skills</h1>
 
-      <div class="languages">
-        <div class = "ele">
+      <div class="languages" id="lang">
+        <div class="ele">
           <img src="./html.png" alt="" />
           <div class="progressbar">
-            <span class="html percentage"></span>
+            <span class="percentage"></span>
           </div>
         </div>
 
-        <div class = "ele">
+        <div class="ele">
           <img src="./css-logo.png" alt="" />
           <div class="progressbar">
-            <span class="css percentage"></span>
+            <span class="percentage"></span>
           </div>
         </div>
 
-        <div class = "ele">
+        <div class="ele">
           <img src="./js_logo.png" alt="" />
           <div class="progressbar">
-            <span class="js percentage"></span>
+            <span class="percentage"></span>
           </div>
         </div>
 
-        <div class = "ele">
+        <div class="ele">
           <img src="./c_programming.png" alt="" />
           <div class="progressbar">
-            <span class="c percentage"></span>
+            <span class="percentage"></span>
           </div>
         </div>
 
-        <div class = "ele">
+        <div class="ele">
           <img src="./c++.png" alt="" />
           <div class="progressbar">
-            <span class="cpp percentage"></span>
+            <span class="percentage"></span>
           </div>
         </div>
 
-        <div class = "ele">
+        <div class="ele">
           <img src="./python.png" alt="" />
           <div class="progressbar">
-            <span class="python percentage"></span>
+            <span class="percentage"></span>
           </div>
         </div>
       </div>
     </section>
 
-    <script>
-      window.addEventListener("scroll", checkViewport);
 
-      function checkViewport() {
-        var element = document.getElementById("container");
-        var element2 = document.getElementsByTagName("nav")[0];
 
-        var rect = element.getBoundingClientRect();
-        var viewportHeight =
-          window.innerHeight || document.documentElement.clientHeight;
-
-        if (rect.top < 0) {
-          element2.style.backgroundColor = "white";
-        }
-        if (rect.top >= 0) {
-          element2.style.backgroundColor = "#0e131f00";
-        }
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
