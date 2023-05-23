@@ -504,6 +504,10 @@ a[href = "#container"]{
     input,textarea{
         margin: 5px 5px;
     }
+
+    .container2{
+        width: 80%;
+    }
 }
 
 @keyframes fadeout{
