@@ -324,7 +324,7 @@ li {
 input,textarea{
     padding: 10px;
     margin: 10px 10px;
-    font-size: 1.2em;
+    font-size: 20px;
     border-radius: 5px;
     border: 2px solid transparent;
     outline: none;
@@ -375,6 +375,15 @@ a[href = "#container"]{
 @keyframes progress {
     from {
         width: 0;
+    }
+}
+
+@media (max-width:1200px){
+    .sayhi{
+        font-size: 15px;
+    }
+    input,textarea{
+        font-size: 15px;
     }
 }
 
@@ -429,6 +438,20 @@ a[href = "#container"]{
     .ele{
         margin: 20px;
     }
+
+    input,textarea
+    {
+        font-size: 12px;
+        padding: 5px;
+        width: 150px;
+    }
+
+    .name{
+        flex-direction: column;
+    }
+    .sayhi{
+        font-size: 12px;
+    }
 }
 
 @media (max-width:600px){
@@ -457,7 +480,11 @@ a[href = "#container"]{
     }
     .progressbar{
     box-shadow: 0 0 3px rgb(245, 159, 0);
+    }
 
+    .container2{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -472,6 +499,10 @@ a[href = "#container"]{
 
     nav a{
         margin: 5px;
+    }
+
+    input,textarea{
+        margin: 5px 5px;
     }
 }
 
