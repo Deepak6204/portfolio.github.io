@@ -30,7 +30,7 @@ nav {
     width: 100%;
     transition: background-color 1s ease;
     top: 0px;
-    z-index: 1;
+    z-index: 5;
 }
 
 nav:hover {
@@ -96,6 +96,10 @@ nav a {
 .inner-container {
     display: flex;
     justify-content: center;
+    animation: slide-image,fadeout;
+    animation-duration: 2s;
+    animation-timing-function:  ease;
+
 }
 
 .image {
@@ -157,9 +161,6 @@ nav a {
     border-radius: 10px;
 }
 
-.tele {
-    color: #34ABE7;
-}
 
 .wp {
     color: #46C254;
@@ -243,6 +244,10 @@ li {
 
 }
 
+.skillbox-animation{
+    animation: slide-up 2s ease;
+}
+
 .c {
     width: 85%;
 }
@@ -266,6 +271,105 @@ li {
 
 .js {
     width: 65%;
+}
+
+
+/* contact deepak yadav */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 100vh;
+    
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.484) ;
+    padding: 30px;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px pink;
+    opacity: 1;
+
+}
+
+.animate{
+    animation-name: slide-in,fadeout;
+    animation-duration: 2s;
+    animation-delay: 1s 0;
+}
+
+.sayhi
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+}
+
+.sayhi h4,.sayhi h1{
+    color: whitesmoke;
+}
+
+.name{
+    display: flex;
+    margin: 0;
+    color: white;
+}
+
+input,textarea{
+    padding: 10px;
+    margin: 10px 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.54);
+    color: white;
+}
+
+input::placeholder,textarea::placeholder{
+    color: rgba(255, 255, 255, 0.482);
+}
+
+input[type = "submit"]
+{
+    align-self: center;
+    min-width: 150px;
+    width: 30%;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid rgba(255, 255, 255, 0.699);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.credits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 30vh;
+    justify-content: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.email,.handles a,.copyright,.lastupdate{
+    color: white;
+}
+
+a[href = "#container"]{
+    text-decoration: none;
+    color: #F0E100;
 }
 
 @keyframes progress {
@@ -368,5 +472,34 @@ li {
 
     nav a{
         margin: 5px;
+    }
+}
+
+@keyframes fadeout{
+    from {
+        opacity: 0;
+    }
+    
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    
+}
+
+@keyframes slide-up{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-image{
+    from{
+        transform: translateX(100%);
     }
 }
